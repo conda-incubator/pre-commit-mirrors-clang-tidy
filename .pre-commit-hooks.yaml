@@ -1,0 +1,8 @@
+- id: clang-tidy-conda
+  name: clang-tidy-conda
+  entry: clang-tidy
+  language: conda
+  'types': ['c++']
+  args: []
+  require_serial: true
+  additional_dependencies: []
