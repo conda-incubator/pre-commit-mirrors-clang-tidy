@@ -1,0 +1,1 @@
+# pre-commit-mirrors-clang-tidy
