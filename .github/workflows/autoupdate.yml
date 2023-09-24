@@ -42,12 +42,6 @@ jobs:
           body: |
             A new release of ${{ steps.versions.outputs.pkgname }} was detected on conda-forge.
 
-            This PR updates ${{ steps.versions.outputs.pkgname }} to version ${{ steps.versions.outputs.new-version }}.
-
-            **After merging, please manually create and push a ${{ steps.versions.outputs.new-version }} tag:**
-
-            ```
-            bash -xc 'tmp=$(mktemp -d) && git clone ${{ github.server_url }}/${{ github.repository }} $tmp && cd $tmp && git tag ${{ steps.versions.outputs.new-version }} && git push --tags'
-            ```
+            This PR updates ${{ steps.versions.outputs.pkgname }} to version ${{ steps.versions.outputs.new-version }} and will push a tag on merge automatically.
           branch: v${{ steps.versions.outputs.new-version }}
           delete-branch: true
