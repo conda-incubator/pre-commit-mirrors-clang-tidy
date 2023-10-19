@@ -1,4 +1,4 @@
 channels:
   - conda-forge
 dependencies:
-  - clangdev=17.0.2
+  - clangdev=17.0.3
