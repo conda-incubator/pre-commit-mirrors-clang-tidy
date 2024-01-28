@@ -2,4 +2,4 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - clang-tidy=null
+  - clangdev=17.0.6
