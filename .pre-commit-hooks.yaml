@@ -1,8 +1,7 @@
 - id: clang-tidy-conda
   name: clang-tidy-conda
+  description: 'This hook runs clang-tidy.'
   entry: clang-tidy
   language: conda
-  'types': ['c++']
-  args: []
+  types: ['c++']
   require_serial: true
-  additional_dependencies: []
