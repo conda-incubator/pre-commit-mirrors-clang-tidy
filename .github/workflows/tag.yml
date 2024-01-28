@@ -15,7 +15,7 @@ jobs:
         with:
           file: environment.yml
           token: ${{ secrets.GITHUB_TOKEN }}
-          version-extraction-override: 'regex:\s+- clang-tidy=(\d+.\d+.\d+)'
+          version-extraction-override: 'regex:\s+- clangdev=(\d+.\d+.\d+)'
       - name: Bump tag
         if: steps.version-metadata.outputs.changed == 'true'
         run: |
