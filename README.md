@@ -1,6 +1,6 @@
-# clang-tidy mirror
+# clang-tidy pre-commit hook
 
-Mirror of clang-tidy for pre-commit with conda as a language.
+pre-commit hook of clang-tidy with conda as a `language` / package manager.
 
 For pre-commit: see [here](https://github.com/pre-commit/pre-commit)
 
